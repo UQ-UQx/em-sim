@@ -1,0 +1,144 @@
+html, body, div, p, a, li, ul, img, h1, h2, form{
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:0px;
+	text-align: left;
+	border: none;
+	outline: none;
+	text-decoration: none;
+	text-emphasis: none;
+	display: block;
+	font-size: 14px;
+	list-style-type:none;	
+}
+
+/* Containers */
+
+#em-sim-container {
+	width: 812px;
+	height: 267px;
+	position: relative;
+}
+
+#wavelength-container {
+	width: 406px;
+	height: 55px; /* 100px; */
+	position: absolute;
+	overflow: hidden;
+}
+
+#frequency-container {
+	width: 406px;
+	height: 55px; /* 100px; */
+	left: 406px;
+	position: absolute;
+	overflow: hidden;
+}
+
+/* Inputs, Labels and Units */
+
+#frequency-label, #frequency-units, #wavelength-label, #wavelength-units, #frequency-converted, #wavelength-converted, #wl-in-m, #freq-in-hz, #metres-label, #hertz-label {
+	font-size: 1.2em;
+	position: absolute;
+	font-family: arial, sans-serif;
+}
+
+#frequency-label, #wavelength-label {
+	left: 10px;
+	top: 20px;
+	font-weight: bold;
+}
+
+#wl-in-m, #freq-in-hz {
+	left: 10px;
+	top: 60px;
+}
+
+#wavelength-units, #frequency-units {
+	left: 310px;
+	top: 15px;
+	width: 60px;
+}
+
+#metres-label, #hertz-label {
+	left: 345px;
+	top: 60px;
+}
+
+#frequency-input, #wavelength-input {
+	width: 230px;
+	left: 145px;
+	top: 13px;
+	font-size: 1.2em;
+	text-align: right;
+	position: absolute;
+	font-family: arial, sans-serif;
+	padding-right: 80px;
+}
+
+#frequency-converted, #wavelength-converted {
+	width: 134px;
+	left: 180px;
+	top: 56px;
+	background-color: #E5E5E5;
+	text-align: right;
+	height: 24px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+}
+
+/* Slider */
+
+#em-slider-container {
+	position: absolute;
+    top: 70px; /* 110px */
+    height: 157px;
+    width: 812px;
+}
+
+#em-slider {
+	position: absolute;
+    height: 127px;
+    width: 710px;
+}
+
+#wavelength-bg {
+	position: absolute;
+    height: 156px;
+    width: 812px;
+}
+
+#em-slider .ui-slider-handle {
+	width: 103px;
+	height: 84px;
+	position: absolute;
+	background-image: url('selection-box.png');
+	background-repeat: no-repeat;
+}
+
+#em-slider .ui-slider-handle:focus {
+	outline: none;
+}
+
+#energy-input {
+	position: absolute;
+	font-family: arial, sans-serif;
+	font-size: 1.1em;
+	left: 1px;
+	top: 12px;
+	width: 101px;
+	text-align: center;
+    color: #FFFFFF;
+}
+
+#energy-label {
+	top: 169px;
+	text-align: center;
+	width: 812px;
+	height: 20px;
+	position: absolute;
+	font-family: arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}

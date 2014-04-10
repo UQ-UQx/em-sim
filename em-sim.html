@@ -1,0 +1,41 @@
+<html>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="em-sim.js"></script>
+  <link href="em-sim.css" rel="stylesheet" type="text/css"></link>
+  <div id="em-sim-container">
+	<div id="wavelength-container">
+	  <div id="wavelength-label">Wavelength (&lambda;):</div>
+	  <div id="wl-in-m">in metres:</div>
+	  <div id="metres-label">m</div>
+	  <input id="wavelength-input" type="text" maxlength="14"/>
+	  <div id="wavelength-converted"></div>
+	  <select id="wavelength-units">
+	  	<option value="1">m</option>
+		<option value="0.000001">&micro;m</option>
+		<option value="0.000000001">nm</option>
+		<option value="0.000000000001">pm</option>
+	  </select>
+	</div>
+	<div id="frequency-container">
+      <div id="frequency-label">Frequency (&nu;):</div>
+	  <div id="freq-in-hz">in hertz:</div>
+      <div id="hertz-label">Hz</div>
+	  <input id="frequency-input" type="text" maxlength="14"/>
+      <div id="frequency-converted"></div>
+	  <select id="frequency-units">
+	  	<option value="1">Hz</option>
+		<option value="1000">kHz</option>
+		<option value="1000000">MHz</option>
+		<option value="1000000000">GHz</option>
+		<option value="1000000000000">THz</option>
+	  </select>
+	</div>
+	<div id="em-slider-container">
+      <img id="wavelength-bg" src="wavelength.jpg"></img>
+	  <div id="em-slider">
+	  <div id="energy-label">Energy</div>
+	  </div>
+	</div>
+  </div>
+</html>
